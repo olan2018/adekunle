@@ -23,12 +23,12 @@ jobs:
 
       - name: Log in to Container Registry
         run: |
-          echo "${{ secrets.ACR_PASSWORD }}" | docker login ${{ secrets.ACR_REGISTRY }} -u ${{ secrets.ACR_USERNAME }} --password-stdin
+          echo "${{ secrets.CR_PASSWORD }}" | docker login ${{ secrets.CR_REGISTRY }} -u ${{ secrets.CR_USERNAME }} --password-stdin
 
       - name: Build and Push Image
         run: |
-          docker build -t ${{ secrets.ACR_REGISTRY }}/theadekunle-frontend:${{ github.sha }} .
-          docker push ${{ secrets.ACR_REGISTRY }}/theadekunle-frontend:${{ github.sha }}
+          docker build -t ${{ secrets.CR_REGISTRY }}/theadekunle-frontend:${{ github.sha }} .
+          docker push ${{ secrets.CR_REGISTRY }}/theadekunle-frontend:${{ github.sha }}
 
   update-helm:
     runs-on: ubuntu-latest
