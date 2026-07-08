@@ -9,8 +9,15 @@ RUN npm run build
 
 FROM nginx:1.27-alpine AS runtime
 
-COPY nginx.conf /etc/nginx/conf.d/default.conf
+RUN mkdir -p /tmp/nginx && \
+    chown -R nginx:nginx /tmp/nginx && \
+    chown -R nginx:nginx /usr/share/nginx/html && \
+    chown -R nginx:nginx /etc/nginx/conf.d
+
+COPY nginx.conf /etc/nginx/nginx.conf
 COPY --from=build /app/dist /usr/share/nginx/html
+
+USER nginx
 
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]

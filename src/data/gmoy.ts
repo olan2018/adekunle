@@ -1,7 +1,7 @@
 export const GMOY = {
   name: "gMOY",
   tagline: "The Workforce Accountability & Execution Platform",
-  url: "https://gmoy.onrender.com",
+  url: "https://gmoy.kreltix.com",
   pitch:
     "Work is happening — but businesses can't see it, verify it, or enforce it. Disengaged employees cost the global economy $8.8 trillion a year. gMOY is a real-time workforce accountability platform that makes sure tasks don't just get assigned — they get done, verified, and measured.",
   flow: ["Assign", "Track", "Verify", "Enforce"],
