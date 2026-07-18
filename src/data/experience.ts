@@ -17,7 +17,7 @@ export const EXPERIENCE: Job[] = [
   {
     company: "SLOCX",
     location: "Aberdeen, United Kingdom",
-    role: "Engineering Manager",
+    role: "Team Lead (Backend / DevOps)",
     period: "2022 — Present",
     initials: "SL",
     logo: slocxLogo,
