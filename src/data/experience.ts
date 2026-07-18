@@ -23,12 +23,14 @@ export const EXPERIENCE: Job[] = [
     logo: slocxLogo,
     bullets: [
       "Led backend architecture and delivery for a multilingual online learning platform using Golang, designing RESTful APIs with Chi router following clean architecture principles and handling 50K+ daily API requests across five countries.",
-      "Architected a highly scalable Golang backend leveraging goroutines and channel-based concurrency patterns to handle high traffic volumes, real-time WebSocket connections for live chat, and WebRTC video streaming for interactive tutoring.",
-      "Designed and built real-time learning features including live chat messaging, tutor video sessions, and lesson booking workflows using Golang with WebSocket implementation for low-latency communication and PostgreSQL for state management.",
-      "Integrated WebRTC protocols in Golang for peer-to-peer video streaming, implementing signaling server logic and connection quality monitoring ensuring smooth live lesson delivery with sub-200ms latency.",
-      "Implemented CI/CD pipelines with GitLab CI and Docker containerization, automating Golang application builds, integration testing, and deployments — reducing release cycles from days to hours.",
-      "Introduced centralized logging with the ELK stack, custom Prometheus metrics for Golang applications, and Grafana dashboards, improving observability and reducing incident response time by 60%.",
-      "Mentored 3 backend engineers on Golang best practices, conducted code and architecture reviews, and established backend engineering standards across security, performance, and scalability.",
+      "Led the design and roll-out of an in-lesson class-tool (realtime whiteboard, tutor content library, vocabulary practice, live quizzes) turning Slocx from video call + booking into a full teaching workspace, increasing tutor session retention by 80% and reducing per-lesson drop-off by 80%.",
+      "Integrated WayForPay end-to-end with idempotent settlement and HMAC-verified webhooks, cutting failed payment reconciliations by 45% and eliminating 100+ monthly manual finance postings.",
+      "Executed an AWS s3 bucket → self-hosted MinIO migration of user-generated media via a resumable zero-downtime migrator, reducing third-party media spend by 10% MoM while retaining full data locality.",
+      "Re-platformed the ecosystem onto self-hosted Kubernetes with Helm + ArgoCD GitOps, cutting deployment time from 10 to under 2 minutes and enabling deterministic cluster stand-up from a single sync.",
+      "Scaled the tutor lifecycle system vetting, scheduling, attendance-driven splits, and payouts to onboard 600+ tutors and 1,000+ students across 6 languages, unlocking multi-region expansion.",
+      "Established a supply-chain security program (full-history secret scanning, image vulnerability gates, credential rotation across 5 providers), reducing exposed-secret incidents to zero and blocking HIGH/CRITICAL vulnerabilities from reaching production.",
+      "Rebuilt the admin operations surface paginated filtered users, CSV exports, tutor payout workflow, off-channel payment reconciliation reducing admin ticket resolution time by 60% and enabling finance ops without engineering intervention.",
+      "Led a 9-engineer team through the transition from single-VM hosting to a GitOps-managed Kubernetes fleet, codifying hiring bar, dependency-addition policy, and cross-service design-review practice.",
     ],
   },
   {
@@ -39,12 +41,16 @@ export const EXPERIENCE: Job[] = [
     initials: "SB",
     logo: sterlingLogo,
     bullets: [
-      "Architected and developed Node.js-based KYC, identity verification, and payment processing systems integrating multiple partner APIs (BVN, NIN, Interswitch, Providus) with OAuth authentication, intelligent failover strategies, and comprehensive retry mechanisms achieving 99.9% uptime.",
-      "Designed and executed secure, auditable customer data migration pipelines using Node.js for a bank acquisition, successfully onboarding 5,000+ customers with PostgreSQL database optimization, idempotent transaction handling, and zero data loss.",
-      "Built production-grade fintech partner API integrations in Node.js implementing rate limiting, webhook processing, circuit breaker patterns, and automated failover logic to maintain system availability during third-party service disruptions.",
-      "Owned incident response and root-cause analysis for critical payment systems, implementing permanent fixes using Node.js async concurrency patterns (Promise.all, worker threads, event-driven architecture) that improved system reliability by 40% and reduced transaction failure rates from 5% to 0.3%.",
-      "Architected secure RBAC systems with Node.js and PostgreSQL for sensitive financial data, implementing audit logging and compliance controls meeting CBN regulatory requirements.",
-      "Developed internal admin and operations tooling using Node.js REST APIs that automated customer support workflows, reducing manual intervention by 80% and improving operational efficiency.",
+      "Led backend development of KYC, identity verification, and payment workflows for regulated financial products, strengthening fraud prevention and ensuring full regulatory compliance.",
+      "Designed and implemented a robust encryption layer for all API communications, enabling secure request/response handling and safeguarding financial transactions.",
+      "Redesigned the card transaction service to enforce strict pre-transaction validations, eliminating critical loopholes and preventing significant financial losses.",
+      "Spearheaded the migration of customers from Bankly (acquired by Sterling) to Gomoney, delivering a seamless transition and enabling users to effortlessly reclaim their accounts.",
+      "Resolved legacy system issues and optimized performance, significantly improving application stability and reliability.",
+      "Built internal admin, operations, and compliance tools that automated key workflows, reducing customer issue volume by approximately 80%.",
+      "Integrated multiple external fintech vendors with failover and resiliency strategies, improving system availability and operational continuity.",
+      "Implemented CBN-compliant address verification (OkHi), reducing onboarding risk and enhancing regulatory adherence.",
+      "Collaborated closely with Compliance, Risk, Operations, and Support teams to resolve high-severity production issues and eliminate recurring defects.",
+      "Led migration to a new KYC provider, significantly improving onboarding success rates and reducing related issues by ~80%."
     ],
   },
   {
@@ -65,30 +71,11 @@ export const EXPERIENCE: Job[] = [
       "Architected a Web Banking platform backend in Golang for corporate customers with KYC compliance workflows, role-based access control, transaction processing, and financial product management serving 500+ corporate accounts.",
     ],
   },
-  {
-    company: "Collab Cards",
-    location: "United Kingdom",
-    role: "Backend Engineer",
-    period: "2020 — 2021",
-    initials: "CC",
-    bullets: [
-      "Architected and built a robust Node.js backend for a social media platform connecting writers, fiction enthusiasts, and poets, featuring content posting, likes, comments, and idea sharing using PostgreSQL, Docker, and AWS.",
-      "Designed and implemented core features including real-time chat, live video lessons with tutors, and a lesson booking system to deliver an interactive learning experience using Node.js.",
-      "Architected a highly scalable Node.js backend, leveraging its event-driven, non-blocking I/O and worker threads to handle high traffic and real-time interactions efficiently.",
-      "Developed lightweight, high-performance REST APIs with Express.js for user management, bookings, and chat services, following clean architecture principles.",
-      "Integrated Socket.io for low-latency, real-time communication and WebRTC for peer-to-peer video streaming, ensuring smooth live lesson experiences.",
-      "Implemented CI/CD pipelines using GitLab for automated testing, containerization with Docker, and deployments to cloud environments for faster release cycles.",
-      "Introduced observability practices with centralized logging (Winston/Pino), metrics, and alerting to monitor system health and improve incident response times.",
-      "Optimized PostgreSQL query performance and Redis caching strategies to reduce latency and improve system performance across multiple regions.",
-      "Mentored junior engineers, established Node.js backend development standards, and drove adoption of best practices in security, performance, and scalability.",
-      "Developed comprehensive automated testing suites using Jest and Supertest to guarantee system reliability, maintainability, and performance at scale.",
-    ],
-  },
-  {
+   {
     company: "Khaime AI",
     location: "Texas, USA",
     role: "Team Lead (Backend)",
-    period: "2019 — 2020",
+    period: "2021 — 2022",
     initials: "KA",
     logo: khaimeLogo,
     bullets: [
@@ -102,4 +89,21 @@ export const EXPERIENCE: Job[] = [
       "Led a microservices migration: decomposed a monolithic backend into a scalable microservices architecture, enabling independent service deployment and scaling.",
     ],
   },
+  {
+    company: "Collab Cards",
+    location: "United Kingdom",
+    role: "Backend Engineer",
+    period: "2019 — 2020",
+    initials: "CC",
+    bullets: [
+      "Architected and collaborated in the development of a scalable Node.js backend for a social content platform (writers, poets, fiction), delivering core features including content publishing, likes, comments, and idea sharing on PostgreSQL, Docker, and AWS.",
+      "Designed high-performance REST APIs using Express.js and clean architecture principles, supporting user management, bookings, and real-time chat services with consistent sub-100ms response times.",
+      "Engineered a low-latency real-time messaging system using Socket.io, leveraging Node.js event-driven, non-blocking I/O and worker threads to efficiently handle high volumes of concurrent connections.",
+      "Optimized PostgreSQL performance and implemented Redis caching strategies, significantly reducing latency and improving throughput under high concurrent, multi-region traffic.",
+      "Integrated multiple third-party services (payments, analytics, email) and implemented CI/CD pipelines with GitLab and Docker, automating testing and cloud deployments for faster, reliable releases.",
+      "Established centralized observability using structured logging (Winston/Pino), metrics, and alerting systems, improving system visibility and reducing incident response time.",
+      "Built comprehensive automated test suites with Jest and Supertest, and collaborated cross-functionally with frontend, product, and QA teams to deliver secure, production-ready features."
+
+    ],
+  }
 ];
